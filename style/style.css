@@ -1,23 +1,21 @@
 /*Reset*/
-html, body, div, section, article, p, blockquote, ul, li, span{
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+html, body, div, section, article, p, blockquote, ul, li, span {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Calibri', sans-serif;
+  font-family: "Calibri", sans-serif;
   color: #fff;
 }
 
 /*Fonts*/
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
 @font-face {
   font-family: Myriad Pro;
   src: url(fonts/myriad-pro-regular.otf);
   src: url(fonts/myriad-pro-regular.ttf);
   src: url(fonts/myriad-pro-regular.woff);
 }
-
 a {
   text-decoration: none;
   cursor: pointer;
@@ -50,3 +48,5 @@ h2 {
 ul {
   list-style-type: none;
 }
+
+/*# sourceMappingURL=style.css.map */
