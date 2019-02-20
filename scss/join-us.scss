@@ -3,6 +3,7 @@
   margin-top: 60px;
 
   .join-us-photo {
+    flex-shrink: 0;
     min-width: 50%;
   }
 
@@ -27,7 +28,7 @@
     }
 
     .main-text-after:after {
-      margin-left: 45%;
+      margin-left: 42%;
       width: 122px;
     }
 

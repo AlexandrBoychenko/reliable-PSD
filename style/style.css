@@ -43,7 +43,7 @@ ul {
 }
 
 .wrapper {
-  width: 85%;
+  width: 1200px;
   position: relative;
   margin: auto;
 }
@@ -72,7 +72,7 @@ ul {
   width: 98px;
   height: 4px;
   background: #00b5d2;
-  margin-left: 46.5%;
+  margin-left: 44.5%;
   margin-top: 0.7rem;
 }
 
@@ -170,6 +170,7 @@ nav {
   margin-top: 60px;
 }
 .join-us .join-us-photo {
+  flex-shrink: 0;
   min-width: 50%;
 }
 .join-us .join-us-info {
@@ -190,7 +191,7 @@ nav {
   color: #ffffff;
 }
 .join-us .join-us-info .main-text-after:after {
-  margin-left: 45%;
+  margin-left: 42%;
   width: 122px;
 }
 .join-us .join-us-info .btn {
@@ -217,7 +218,7 @@ nav {
 }
 .slider .slider-wrapper img {
   border: 8px solid #ffffff;
-  max-height: 455px;
+  max-height: 485px;
 }
 
 .support {
