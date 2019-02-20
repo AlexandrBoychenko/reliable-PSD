@@ -1,7 +1,3 @@
-header {
-  z-index: 0;
-}
-
 .logo {
   display: inline-block;
   margin-left: 25px;
@@ -47,7 +43,6 @@ nav {
 .help {
   margin-top: -3.9rem;
   width: 100%;
-  z-index: -1;
   background: url('../img/background-main.jpg');
   background-size: cover;
 }
@@ -57,10 +52,9 @@ nav {
   max-width: 37%;
 
   h2 {
-    font-size: 3.2rem;
-    font-weight: 900;
     color: #ffffff;
     margin-bottom: 3px;
+    text-shadow: 1px 1px #222;
   }
   h2:after {
     display: block;
@@ -70,13 +64,10 @@ nav {
     background: #00b5d2;
     margin-left: 45%;
     margin-top: 1rem;
-    text-shadow: 1px 1px #222;
   }
   p {
-    font-size: 1.15rem;
     margin-top: 1rem;
     margin-bottom: 46px;
-    line-height: 1.8rem;
     color: #ffffff;
     text-shadow: 1px 1px #222;
   }

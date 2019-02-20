@@ -55,8 +55,15 @@ ul {
   outline: none;
 }
 
-header {
-  z-index: 0;
+.main-text {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.description-text {
+  font-size: 1.15rem;
+  line-height: 1.8rem;
 }
 
 .logo {
@@ -104,7 +111,6 @@ nav {
 .help {
   margin-top: -3.9rem;
   width: 100%;
-  z-index: -1;
   background: url("../img/background-main.jpg");
   background-size: cover;
 }
@@ -114,10 +120,9 @@ nav {
   max-width: 37%;
 }
 .help-description h2 {
-  font-size: 3.2rem;
-  font-weight: 900;
   color: #ffffff;
   margin-bottom: 3px;
+  text-shadow: 1px 1px #222;
 }
 .help-description h2:after {
   display: block;
@@ -127,13 +132,10 @@ nav {
   background: #00b5d2;
   margin-left: 45%;
   margin-top: 1rem;
-  text-shadow: 1px 1px #222;
 }
 .help-description p {
-  font-size: 1.15rem;
   margin-top: 1rem;
   margin-bottom: 46px;
-  line-height: 1.8rem;
   color: #ffffff;
   text-shadow: 1px 1px #222;
 }
@@ -149,6 +151,21 @@ nav {
 .banners .banner {
   padding: 1rem;
   max-height: 100px;
+}
+
+.support {
+  min-height: 500px;
+  text-align: center;
+  background-size: contain;
+  background: url("../img/background-support.jpg");
+}
+.support .main-text {
+  color: #ffffff;
+  padding-top: 95px;
+}
+.support .description-text {
+  color: #ffffff;
+  padding-top: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
