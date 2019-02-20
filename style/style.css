@@ -58,12 +58,16 @@ ul {
 .main-text {
   font-size: 3.2rem;
   font-weight: 900;
-  color: #ffffff;
 }
 
 .description-text {
   font-size: 1.15rem;
   line-height: 1.8rem;
+}
+
+.low-main-text {
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 .logo {
@@ -153,6 +157,20 @@ nav {
   max-height: 100px;
 }
 
+.slider {
+  text-align: center;
+  font-size: 0;
+  background: #ffffff url("../img/background-slider.jpg") no-repeat;
+  background-size: contain;
+}
+.slider .slider-wrapper {
+  padding-top: 145px;
+}
+.slider .slider-wrapper img {
+  border: 8px solid #ffffff;
+  max-height: 487px;
+}
+
 .support {
   min-height: 500px;
   text-align: center;
@@ -166,6 +184,25 @@ nav {
 .support .description-text {
   color: #ffffff;
   padding-top: 35px;
+}
+
+.contact-us {
+  text-align: center;
+}
+.contact-us .low-main-text {
+  color: #777777;
+  margin-top: 65px;
+}
+.contact-us .description-text {
+  color: #444444;
+  width: 70%;
+  margin: 35px auto auto;
+}
+.contact-us .btn {
+  margin-top: 40px;
+  margin-bottom: 70px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

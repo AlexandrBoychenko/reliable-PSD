@@ -1,0 +1,15 @@
+.slider {
+  text-align: center;
+  font-size: 0;
+  background: #ffffff url('../img/background-slider.jpg') no-repeat;;
+  background-size: contain;
+
+  .slider-wrapper {
+    padding-top: 145px;
+
+    img {
+      border: 8px solid #ffffff;
+      max-height: 487px;
+    }
+  }
+}
