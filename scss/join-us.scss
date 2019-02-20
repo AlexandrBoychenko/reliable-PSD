@@ -1,0 +1,49 @@
+.join-us {
+  display: flex;
+  margin-top: 60px;
+
+  .join-us-photo {
+    min-width: 50%;
+  }
+
+  .join-us-info {
+    padding-left: 30px;
+    padding-right: 60px;
+    background: #367ab7;
+
+    .description-text.italic {
+      font-style: italic;
+      color: #ffffff;
+      padding-top: 35px;
+    }
+
+    .description-text.in-team {
+      line-height: 1.6;
+      color: #ffffff;
+    }
+
+    .main-text-after {
+      color: #ffffff;
+    }
+
+    .main-text-after:after {
+      margin-left: 45%;
+      width: 122px;
+    }
+
+    .btn {
+      background-color: #00b5d2;
+      border-color: #008ea5;
+      padding-left: 23px;
+      padding-right: 23px;
+    }
+  }
+
+  .join-us-info > * {
+    margin-bottom: 35px;
+  }
+
+  .join-us-info > *:nth-child(2) {
+    margin-bottom: 20px;
+  }
+}
