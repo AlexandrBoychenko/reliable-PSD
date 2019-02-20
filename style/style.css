@@ -163,8 +163,8 @@ nav {
   background: #ffffff url("../img/background-slider.jpg") no-repeat;
   background-size: contain;
 }
-.slider .slider-wrapper {
-  padding-top: 145px;
+.slider .main-text {
+  padding: 56px 0 45px;
 }
 .slider .slider-wrapper img {
   border: 8px solid #ffffff;

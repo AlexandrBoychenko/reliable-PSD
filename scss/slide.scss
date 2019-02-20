@@ -4,8 +4,11 @@
   background: #ffffff url('../img/background-slider.jpg') no-repeat;;
   background-size: contain;
 
+  .main-text {
+    padding: 56px 0 45px;
+  }
+
   .slider-wrapper {
-    padding-top: 145px;
 
     img {
       border: 8px solid #ffffff;
