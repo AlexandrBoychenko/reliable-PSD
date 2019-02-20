@@ -1,9 +1,10 @@
 /*Reset*/
-html, body, div, section, article, p, blockquote, ul, li, span{
+html, body, div, section, article, address, p, blockquote, ul, li, span, a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  font-style: normal;
   color: #ffffff;
 }
 

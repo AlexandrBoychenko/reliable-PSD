@@ -4,17 +4,19 @@
   margin-top: 30px;
 }
 
-nav {
-  display: inline-block;
-  position: absolute;
-  right: 0;
+.nav-header {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  li {
+    display: inline-block;
+    margin: 43px 17px;
+  }
 }
 
 .nav-item {
-  display: inline-block;
   font-size: 1rem;
   color: #454546;
-  margin: 43px 17px;
   text-align: center;
   text-shadow: 0.5px 0.5px #b75c1c;;
 }

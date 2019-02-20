@@ -1,10 +1,11 @@
 /*Reset*/
 @import url("https://fonts.googleapis.com/css?family=Lato:regular,bold,italic,black");
-html, body, div, section, article, p, blockquote, ul, li, span {
+html, body, div, section, article, address, p, blockquote, ul, li, span, a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  font-style: normal;
   color: #ffffff;
 }
 
@@ -87,23 +88,84 @@ ul {
   font-weight: 900;
 }
 
+hr.pre-footer-line {
+  margin-top: 58px;
+  border: 3px solid #cccccc;
+}
+
+hr.post-footer {
+  width: 80%;
+  border: 1px solid #eeeeee;
+}
+
+footer {
+  padding: 48px 0 52px;
+  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+.footer-nav .footer-nav-item {
+  font-size: 1rem;
+  padding: 0 28px;
+  line-height: 1.08;
+  font-weight: 900;
+  color: #999999;
+}
+
+.squares {
+  display: flex;
+  justify-content: center;
+}
+.squares .square-item {
+  padding: 45px 20px;
+}
+
+address, .tel {
+  font-size: 0.8rem;
+  color: #aaaaaa;
+  font-weight: normal;
+}
+
+.tel {
+  display: block;
+  margin: 18px auto;
+}
+
+.mail {
+  display: block;
+  margin-bottom: 48px;
+  color: #e1aa6e;
+  font-size: 1rem;
+}
+
+.copyright {
+  margin-top: 33px;
+  color: #aaaaaa;
+  font-size: 0.75rem;
+}
+
 .logo {
   display: inline-block;
   margin-left: 25px;
   margin-top: 30px;
 }
 
-nav {
+.nav-header {
   display: inline-block;
   position: absolute;
   right: 0;
 }
+.nav-header li {
+  display: inline-block;
+  margin: 43px 17px;
+}
 
 .nav-item {
-  display: inline-block;
   font-size: 1rem;
   color: #454546;
-  margin: 43px 17px;
   text-align: center;
   text-shadow: 0.5px 0.5px #b75c1c;
 }
@@ -245,6 +307,7 @@ nav {
   margin-top: 65px;
 }
 .contact-us .description-text {
+  line-height: 1.8;
   color: #444444;
   width: 70%;
   margin: 35px auto auto;
