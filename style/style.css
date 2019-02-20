@@ -88,6 +88,11 @@ ul {
   font-weight: 900;
 }
 
+@media screen and (max-width: 720px) {
+  .main-text-after:after {
+    margin-left: 0;
+  }
+}
 hr.pre-footer-line {
   margin-top: 58px;
   border: 3px solid #cccccc;
@@ -170,20 +175,18 @@ address, .tel {
   text-shadow: 0.5px 0.5px #b75c1c;
 }
 
-.nav-item:last-child {
-  margin-right: 34px;
-}
-
 .nav-item:hover {
   color: #ffffff;
   cursor: pointer;
 }
 
-.nav-item:hover:after {
+.nav-header li:last-child {
+  margin-right: 34px;
+}
+.nav-header li:hover:after {
   display: block;
 }
-
-.nav-item::after {
+.nav-header li::after {
   display: none;
   content: "";
   background: #00b5d2;
@@ -227,6 +230,26 @@ address, .tel {
   max-height: 100px;
 }
 
+@media screen and (max-width: 375px) {
+  .logo {
+    margin-top: 1rem;
+    width: 60%;
+  }
+
+  .help {
+    margin-top: -4.9rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .help {
+    width: auto;
+  }
+
+  .help-description {
+    padding-top: 160px;
+    max-width: 50%;
+  }
+}
 .join-us {
   display: flex;
   margin-top: 60px;
@@ -253,7 +276,7 @@ address, .tel {
   color: #ffffff;
 }
 .join-us .join-us-info .main-text-after:after {
-  margin-left: 42%;
+  margin-left: 13rem;
   width: 122px;
 }
 .join-us .join-us-info .btn {
@@ -269,6 +292,15 @@ address, .tel {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  .join-us {
+    display: block;
+  }
+
+  .join-us-photo {
+    display: none;
+  }
+}
 .slider {
   text-align: center;
   font-size: 0;

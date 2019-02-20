@@ -21,25 +21,27 @@
   text-shadow: 0.5px 0.5px #b75c1c;;
 }
 
-.nav-item:last-child {
-  margin-right: 34px;
-}
-
 .nav-item:hover {
   color: #ffffff;
   cursor: pointer;
 }
 
-.nav-item:hover:after {
-  display: block;
-}
+.nav-header {
+  li:last-child {
+    margin-right: 34px;
+  }
 
-.nav-item::after {
-  display: none;
-  content: "";
-  background: #00b5d2;
-  height: 6px;
-  margin-top: 2.3rem;
+  li:hover:after {
+    display: block;
+  }
+
+  li::after {
+    display: none;
+    content: "";
+    background: #00b5d2;
+    height: 6px;
+    margin-top: 2.3rem;
+  }
 }
 
 .help {
@@ -78,5 +80,25 @@
   .banner {
     padding: 1rem;
     max-height: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .logo {
+    margin-top: 1rem;
+    width: 60%;
+  }
+  .help {
+    margin-top: -4.9rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .help {
+    width: auto;
+  }
+  .help-description {
+    padding-top: 160px;
+    max-width: 50%;
   }
 }

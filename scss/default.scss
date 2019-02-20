@@ -88,3 +88,9 @@ ul {
   font-size: 1.5rem;
   font-weight: 900;
 }
+
+@media screen and (max-width: 720px) {
+  .main-text-after:after {
+    margin-left: 0;
+  }
+}
