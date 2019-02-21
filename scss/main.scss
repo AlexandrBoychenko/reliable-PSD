@@ -82,23 +82,3 @@
     max-height: 100px;
   }
 }
-
-@media screen and (max-width: 375px) {
-  .logo {
-    margin-top: 1rem;
-    width: 60%;
-  }
-  .help {
-    margin-top: -4.9rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .help {
-    width: auto;
-  }
-  .help-description {
-    padding-top: 160px;
-    max-width: 50%;
-  }
-}

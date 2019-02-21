@@ -230,26 +230,6 @@ address, .tel {
   max-height: 100px;
 }
 
-@media screen and (max-width: 375px) {
-  .logo {
-    margin-top: 1rem;
-    width: 60%;
-  }
-
-  .help {
-    margin-top: -4.9rem;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .help {
-    width: auto;
-  }
-
-  .help-description {
-    padding-top: 160px;
-    max-width: 50%;
-  }
-}
 .join-us {
   display: flex;
   margin-top: 60px;
@@ -292,15 +272,6 @@ address, .tel {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1024px) {
-  .join-us {
-    display: block;
-  }
-
-  .join-us-photo {
-    display: none;
-  }
-}
 .slider {
   text-align: center;
   font-size: 0;
@@ -349,6 +320,41 @@ address, .tel {
   margin-bottom: 70px;
   padding-left: 80px;
   padding-right: 80px;
+}
+
+@media screen and (max-width: 469px) {
+  .logo {
+    margin-top: 3rem;
+    width: 60%;
+  }
+
+  .help {
+    margin-top: -6.9rem;
+    background-size: 220%;
+    background-position: left top;
+  }
+
+  .help-description {
+    padding: 200px 0 100px 250px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .join-us {
+    display: block;
+  }
+
+  .join-us-photo {
+    display: none;
+  }
+
+  .help {
+    width: auto;
+  }
+
+  .help-description {
+    padding-top: 160px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
