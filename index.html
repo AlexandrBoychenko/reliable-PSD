@@ -10,16 +10,59 @@
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
     <script src="scripts/slider.js"></script>
+    <script src="scripts/menu.js"></script>
 </head>
 <body>
 <div class="wrapper">
     <header>
         <img src="img/logo.png" alt="logo" class="logo">
+        <nav class="menu-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
         <nav class="nav-header">
             <ul>
-                <li><a href="#" class="nav-item">HOME</a></li>
-                <li><a href="#" class="nav-item">ABOUT US</a></li>
-                <li><a href="#" class="nav-item">CONTACT</a></li>
+                <li class="parent-sub">
+                    <a href="#" class="nav-item">HOME</a>
+                    <ul class="submenu">
+                        <li><a href="#" class="nav-item sub-item">OUR PAGE</a>
+                            <ul class="submenu nested">
+                                <li><a href="#" class="nav-item sub-item">NEW DATA</a></li>
+                                <li><a href="#" class="nav-item sub-item">INFO</a>
+                                    <ul class="submenu nested">
+                                        <li><a href="#" class="nav-item sub-item">HELP</a></li>
+                                        <li><a href="#" class="nav-item sub-item">INTERESTING</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="nav-item">NEXT PARAGRAPH</a></li>
+                        <li><a href="#" class="nav-item">REGULATIONS</a></li>
+                        <li><a href="#" class="nav-item">ADDRESS</a>
+                            <ul class="submenu nested">
+                                <li><a href="#" class="nav-item sub-item">OUR CITIES</a></li>
+                                <li><a href="#" class="nav-item sub-item">TRAINING CENTER</a></li>
+                                <li><a href="#" class="nav-item sub-item">CONTACT WITH US</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="parent-sub"><a href="#" class="nav-item">ABOUT US</a>
+                    <ul class="submenu">
+                        <li><a href="#" class="nav-item sub-item">NEWS</a></li>
+                        <li><a href="#" class="nav-item sub-item">BEST CREDENTIALS</a></li>
+                        <li><a href="#" class="nav-item sub-item">ADDITIONAL INFO</a></li>
+                    </ul>
+                </li>
+                <li class="parent-sub"><a href="#" class="nav-item">CONTACT</a>
+                    <ul class="submenu parent-sb">
+                        <li><a href="#" class="nav-item sub-item">OUR ADDRESS</a></li>
+                        <li><a href="#" class="nav-item sub-item">WELCOME</a></li>
+                        <li><a href="#" class="nav-item sub-item">ADDITIONAL INFO</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>

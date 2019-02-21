@@ -14,4 +14,48 @@
   .help-description {
     padding-top: 160px;
   }
+
+  .menu-burger{
+    display: inline-block;
+    margin-left: 56%;
+  }
+
+  .nav-header {
+    position: fixed;
+    display: none;
+    width: 45%;
+    right: 0;
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+
+  .nav-item {
+    display: block;
+    padding: 10px 0 40px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .nav-item:hover {
+    color: #e1aa6e;
+  }
+
+  .nav-header li {
+    display: block;
+  }
+
+  .nav-header li:last-child {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .nav-header li::after {
+    content: "";
+    margin-top: -6px;
+  }
+
+  .main-text-after:after {
+    margin-left: 0;
+  }
 }
