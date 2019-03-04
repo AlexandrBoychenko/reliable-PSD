@@ -43,12 +43,6 @@ ul {
   list-style-type: none;
 }
 
-.wrapper {
-  width: 1200px;
-  position: relative;
-  margin: auto;
-}
-
 .btn {
   padding: 20px 64px;
   font-size: 1.25rem;
@@ -60,39 +54,6 @@ ul {
   outline: none;
 }
 
-.main-text,
-.main-text-after {
-  line-height: 1.08;
-  font-size: 3.2rem;
-  font-weight: 900;
-}
-
-.main-text-after:after {
-  display: block;
-  content: "";
-  width: 98px;
-  height: 4px;
-  background: #00b5d2;
-  margin-left: 44.5%;
-  margin-top: 0.7rem;
-}
-
-.description-text {
-  font-size: 1.15rem;
-  line-height: 1.08;
-}
-
-.low-main-text {
-  line-height: 1.08;
-  font-size: 1.5rem;
-  font-weight: 900;
-}
-
-@media screen and (max-width: 720px) {
-  .main-text-after:after {
-    margin-left: 0;
-  }
-}
 hr.pre-footer-line {
   margin-top: 58px;
   border: 3px solid #cccccc;
@@ -183,9 +144,9 @@ address, .tel {
 
 .banners {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 0.6rem 0;
   max-width: 100%;
 }
@@ -194,11 +155,41 @@ address, .tel {
   max-height: 100px;
 }
 
+.main-text,
+.main-text-after {
+  line-height: 1.08;
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+.main-text-after:after {
+  display: block;
+  content: "";
+  width: 98px;
+  height: 4px;
+  background: #00b5d2;
+  margin-left: 11.6rem;
+  margin-top: 0.7rem;
+}
+
+.description-text {
+  font-size: 1.15rem;
+  line-height: 1.08;
+}
+
+.low-main-text {
+  line-height: 1.08;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
 .join-us {
   display: flex;
   margin-top: 60px;
+  background: #367ab7;
 }
 .join-us .join-us-photo {
+  align-self: baseline;
   flex-shrink: 0;
   min-width: 50%;
 }
@@ -239,11 +230,10 @@ address, .tel {
 .slider {
   text-align: center;
   font-size: 0;
-  background: #ffffff url("../img/background-slider.jpg") no-repeat;
-  background-size: contain;
+  background: #ffffff url("../img/background-slider.jpg") top -50px center/contain no-repeat;
 }
 .slider .main-text {
-  padding: 56px 0 45px;
+  padding: 56px 0;
 }
 .slider .slider-wrapper img {
   border: 8px solid #ffffff;
@@ -253,8 +243,7 @@ address, .tel {
 .support {
   min-height: 500px;
   text-align: center;
-  background-size: contain;
-  background: url("../img/background-support.jpg");
+  background: #00b5d2 url(../img/background-support.jpg) bottom center/contain no-repeat;
 }
 .support .main-text {
   color: #ffffff;
@@ -290,6 +279,7 @@ address, .tel {
   display: inline-block;
   position: absolute;
   right: 0;
+  top: 0;
 }
 .nav-header li {
   display: inline-block;
@@ -336,11 +326,17 @@ address, .tel {
   height: 9px;
   width: 100%;
   background: #454546;
-  border-radius: 9px;
   opacity: 1;
   left: 0;
-  transform: rotate(0deg);
   transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
 }
 
 .menu-burger span:nth-child(1) {
@@ -363,10 +359,14 @@ address, .tel {
 
 .menu-open span:nth-child(2) {
   transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
 }
 
 .menu-open span:nth-child(3) {
   transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
 }
 
 .menu-open span:nth-child(4) {
@@ -420,11 +420,15 @@ address, .tel {
 
   .help-description {
     padding-top: 160px;
+    width: auto;
+    max-width: 45%;
   }
 
   .menu-burger {
     display: inline-block;
-    margin-left: 56%;
+    position: absolute;
+    top: 25px;
+    right: 3%;
   }
 
   .nav-header {
@@ -432,20 +436,23 @@ address, .tel {
     display: none;
     width: 45%;
     right: 0;
-    margin-top: 2rem;
-    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 5rem;
+    background-color: #ead588;
     z-index: 1000;
   }
 
   .nav-item {
     display: block;
-    padding: 10px 0 40px;
+    padding: 6px 0;
     text-align: center;
-    color: #ffffff;
   }
 
-  .nav-item:hover {
-    color: #e1aa6e;
+  .nav-item:active {
+    color: #1f1510;
+  }
+
+  .nav-header {
+    width: 50%;
   }
 
   .nav-header li {
@@ -462,27 +469,57 @@ address, .tel {
     margin-top: -6px;
   }
 }
+@media screen and (max-width: 750px) {
+  .help-description {
+    max-width: 70%;
+  }
+
+  .slider-wrapper img {
+    width: calc(100% - 16px);
+  }
+
+  .slider {
+    background-repeat: repeat;
+  }
+
+  .footer-nav .footer-nav-item {
+    padding: 0 20px;
+  }
+}
 @media screen and (max-width: 469px) {
   .logo {
-    margin-top: 3rem;
-    width: 50%;
+    width: 60%;
   }
 
   .help {
     margin-top: -6.9rem;
-    background-size: 220%;
+    background-size: 300%;
     background-position: left top;
   }
 
   .help-description {
-    padding: 200px 0 100px 120px;
-    width: auto;
-    max-width: 57%;
+    max-width: inherit;
   }
 
-  .menu-burger {
-    margin-left: 30%;
-    vertical-align: super;
+  .slider .main-text {
+    padding: 10px;
+  }
+
+  .support .main-text {
+    color: #ffffff;
+    padding-top: 15px;
+  }
+
+  .join-us .join-us-info .main-text-after:after {
+    margin-left: 0;
+  }
+
+  .support {
+    min-height: 400px;
+  }
+
+  .footer-nav .footer-nav-item {
+    padding: 0 10px;
   }
 }
 

@@ -13,11 +13,15 @@
 
   .help-description {
     padding-top: 160px;
+    width: auto;
+    max-width: 45%;
   }
 
   .menu-burger{
     display: inline-block;
-    margin-left: 56%;
+    position: absolute;
+    top: 25px;
+    right: 3%;
   }
 
   .nav-header {
@@ -25,20 +29,23 @@
     display: none;
     width: 45%;
     right: 0;
-    margin-top: 2rem;
-    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 5rem;
+    background-color: #ead588;
     z-index: 1000;
   }
 
   .nav-item {
     display: block;
-    padding: 10px 0 40px;
+    padding: 6px 0;
     text-align: center;
-    color: #ffffff;
   }
 
-  .nav-item:hover {
-    color: #e1aa6e;
+  .nav-item:active {
+    color: #1f1510;
+  }
+
+  .nav-header {
+    width: 50%;
   }
 
   .nav-header li {
@@ -53,9 +60,5 @@
   .nav-header li::after {
     content: "";
     margin-top: -6px;
-  }
-
-  .main-text-after:after {
-    margin-left: 0;
   }
 }

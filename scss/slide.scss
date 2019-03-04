@@ -1,15 +1,13 @@
 .slider {
   text-align: center;
   font-size: 0;
-  background: #ffffff url('../img/background-slider.jpg') no-repeat;;
-  background-size: contain;
+  background: #ffffff url('../img/background-slider.jpg') top -50px center/contain no-repeat;
 
   .main-text {
-    padding: 56px 0 45px;
+    padding: 56px 0;
   }
 
   .slider-wrapper {
-
     img {
       border: 8px solid #ffffff;
       max-height: 485px;

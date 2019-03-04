@@ -1,0 +1,17 @@
+@media screen and (max-width: 750px) {
+  .help-description {
+    max-width: 70%;
+  }
+
+  .slider-wrapper img {
+    width: calc(100% - 16px);
+  }
+
+  .slider {
+    background-repeat: repeat;
+  }
+
+  .footer-nav .footer-nav-item {
+    padding: 0 20px;
+  }
+}

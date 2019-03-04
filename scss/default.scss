@@ -44,12 +44,6 @@ ul {
   list-style-type: none;
 }
 
-.wrapper {
-  width: 1200px;
-  position: relative;
-  margin: auto;
-}
-
 .btn {
   padding: 20px 64px;
   font-size: 1.25rem;
@@ -59,32 +53,4 @@ ul {
   border-bottom: 10px solid #ba8e5b;
   cursor: pointer;
   outline: none;
-}
-
-.main-text,
-.main-text-after {
-  line-height: 1.08;
-  font-size: 3.2rem;
-  font-weight: 900;
-}
-
-.main-text-after:after {
-    display: block;
-    content: "";
-    width: 98px;
-    height: 4px;
-    background: #00b5d2;
-    margin-left: 44.5%;
-    margin-top: 0.7rem;
-}
-
-.description-text {
-  font-size: 1.15rem;
-  line-height: 1.08;
-}
-
-.low-main-text {
-  line-height: 1.08;
-  font-size: 1.5rem;
-  font-weight: 900;
 }

@@ -1,23 +1,36 @@
 @media screen and (max-width: 469px) {
   .logo {
-    margin-top: 3rem;
-    width: 50%;
+    width: 60%;
   }
 
   .help {
     margin-top: -6.9rem;
-    background-size: 220%;
+    background-size: 300%;
     background-position: left top;
   }
 
   .help-description {
-    padding: 200px 0 100px 120px;
-    width: auto;
-    max-width: 57%;
+    max-width: inherit;
   }
 
-  .menu-burger {
-    margin-left: 30%;
-    vertical-align: super;
+  .slider .main-text {
+    padding: 10px;
+  }
+
+  .support .main-text {
+    color: #ffffff;
+    padding-top: 15px;
+  }
+
+  .join-us .join-us-info .main-text-after:after {
+    margin-left: 0;
+  }
+
+  .support {
+    min-height: 400px;
+  }
+
+  .footer-nav .footer-nav-item {
+    padding: 0 10px;
   }
 }

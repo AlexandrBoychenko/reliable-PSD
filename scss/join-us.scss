@@ -1,8 +1,10 @@
 .join-us {
   display: flex;
   margin-top: 60px;
+  background: #367ab7;
 
   .join-us-photo {
+    align-self: baseline;
     flex-shrink: 0;
     min-width: 50%;
   }
